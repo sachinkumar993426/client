@@ -55,7 +55,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await axios.post('http://127.0.0.1:8080/api/v1/post', {
+        const response = await axios.post('https://open-ai-backend-hbmu.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

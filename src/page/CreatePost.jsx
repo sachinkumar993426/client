@@ -28,7 +28,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await axios.post('http://127.0.0.1:8080/api/v1/dalle', {
+        const response = await axios.post('https://open-ai-backend-hbmu.onrender.com/api/v1/dalle', {
           headers: {
             'Content-Type': 'application/json',
           },

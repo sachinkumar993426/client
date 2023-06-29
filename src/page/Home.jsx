@@ -26,7 +26,7 @@ const Home = () => {
   const fetchPosts = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://127.0.0.1:8080/api/v1/post', {
+      const response = await axios.get('https://open-ai-backend-hbmu.onrender.com/api/v1/post', {
         headers: {
           'Content-Type': 'application/json',
         },
